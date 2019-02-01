@@ -4,4 +4,5 @@ body {
 
 h1 {
     font-family: 'Pattaya', sans-serif;
+    text-shadow: 4px 4px 4px #aaa;
 }
