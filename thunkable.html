@@ -5,8 +5,68 @@
   <title>Thunkable</title>
 </head>
 
-<body>  
+<body>
+
+
+
+<h1>Image Recognition</h1>
+<p>โดย นิป เอมรัฐ<br>๒ ก.พ. ๒๕๖๒</p>
   
+  <p></p>
+  
+  <ol>
+    <li>จาก User Interface ลาก Button ไปวางยังโทรศัพท์</li>
+    <li>จาก Image ลาก Image ไปวางยังโทรศัพท์ เหนือปุ่ม</li>
+    <li>จาก Image ลาก Camera ไปวางยังโทรศัพท์ Camera1 จะปรากฏที่ด้านล่างของโทรศัพท์</li>
+    <li>คลิกแท็บ Blocks เพื่อเริ่มเขียนโปรแกรม</li>
+    <li>คลิก Button1 เพื่อเปิดลิ้นชักของ Button1 ออกมา</li>
+    <li>ลาก "when Button1 Click" ไปวางยังโทรศัพท์</li>
+    <li>เปิดลิ้นชัก Camera1 ลาก "in Camera1 call TakePhoto" มาวางที่ "when Button1 Click" จะมีเสียงดังขึ้น เมื่อวางถูกตำแหน่ง</li>
+    <li>เปิดลิ้นชัก Image1 ลาก "from Image1 set Picture to" มาวางที่ "in Camera1 call TakePhoto"</li>
+    <li>ลาก "photo" มาวางยัง "from Image1 set Picture to"</li>
+    <li>คลิก Live Test</li>
+    <li>แตะคำว่า Button ในแอป โทรศัพท์ของคุณจะเปิดกล้องออกมา</li>
+    <li>กดปุ่มถ่ายภาพ เลือกคำสั่ง Use Photo ภาพจะปรากฏขึ้นเหนือปุ่ม</li>
+    <li>กลับมาที่ design จาก User Interface ลาก Label มาวางใต้ปุ่ม</li>
+    <li>จาก Image ลาก "Image Recognizer" ไปวางยังโทรศัพท์</li>
+    <li>เปิดลิ้นชัก Image_Recognizer1 ลาก "in Image_Recognizer1 call Upload" มาวางที่ "in Camera1 call TakePhoto"</li>
+    <li>ลาก "photo" จาก Camera1 ไปวางที่ซ็อกเก็ต "image" ของ Image_Recognizer1</li>
+    <li>เปิดลิ้นชัก Label1 ลาก "from Label1 set Text to" มาวางที่ "in Image_Recognizer1 call Upload"</li>
+    <li>จาก Image ลาก "description" จาก Image_Recognizer1 ไปวางที่ "from Label1 set Text to"</li>
+    <li>คลิก Live Test</li>
+    <li>แตะคำว่า Button ในแอปเพื่อทดสอบการทำงานของ Microsoft Image Recognition ไชโย!</li>
+  </ol>
+
+  <p><img src="images/thunkable-screen4.jpg" alt="Thunkable" width="320">
+    <img src="images/thunkable-screen5.png" alt="Microsoft Image Recognition" width="320"></p>
+
+
+<h1>สุ่มคำตอบ</h1>
+<p>โดย นิป เอมรัฐ<br>๒ ก.พ. ๒๕๖๒</p>
+
+  <p></p>
+
+  <ol>
+    <li>จาก User Interface ลาก Button ไปวางยังโทรศัพท์</li>
+    <li>จาก User Interface ลาก Label ไปวางยังโทรศัพท์</li>
+    <li>คลิกแท็บ Blocks เพื่อเริ่มเขียนโปรแกรม</li>
+    <li>คลิก Button1 เพื่อเปิดลิ้นชักของ Button1 ออกมา</li>
+    <li>ลาก “when Button1 Click” ออกมาวางยัง blocks editor</li>
+    <li>เปิดลิ้นชัก Label1 ลาก "from Label1 set Text to" มาวางที่ "when Button1 Click" จะมีเสียงดังขึ้น เมื่อวางถูกตำแหน่ง</li>
+    <li>เปิดลิ้นชัก Lists ลาก "random item of list" มาวางที่ “from Label1 set Text to”
+    <br>สุ่มข้อความมาหนึ่งจากสองข้อความ</li>
+    <li>เพิ่มข้อความลงในบล็อกแรก
+    <br>การเพิ่มตัวเลือกให้มากขึ้น ทำได้โดยคลิกที่ไอคอนเกียร์สีน้ำเงินขาว แล้ววางบล็อก item เติมลงไปใน list
+    <br>เพิ่มบล็อกข้อความให้แก่แต่ละตัวเลือกที่สร้างขึ้น</li>
+    <li>คลิก Live Test</li>
+    <li>แตะคำว่า Button ในแอป โทรศัพท์ของคุณจะสุ่มแสดงข้อความที่คุณกำหนดไว้ออกมา ไชโย!</li>
+  </ol>
+
+
+<h1>รูปบนปุ่ม</h1>
+<p>โดย นิป เอมรัฐ<br>๒ ก.พ. ๒๕๖๒</p>
+
+<p>ที่คุณลักษณะของปุ่ม ด้านขวามือของจอ ลบชื่อปุ่มในช่อง Text อัพโหลดรูปภาพที่จะแสดงบนปุ่มในช่อง BackgroundPicture ปรับขนาดปุ่มตามต้องการ เลือก Absolute Size ในช่อง Height และ Width พิมพ์ตัวเลขขนาดที่ต้องการ เช่น 200 และ 200</p>
 
 <h1>ดาวน์โหลดและติดตั้งแอปที่สร้าง</h1>
 <p>โดย นิป เอมรัฐ<br>๓๑ ม.ค. ๒๕๖๒</p>
@@ -182,8 +242,8 @@
   <p>อ่าน:<br>Forbes. (2018, Jun 13). <em>Who Would Have Thought A Research Project Could Become A Great Startup?</em> Retrieve from https://www.forbes.com/sites/frederickdaso/2018/06/13/who-would-have-thunk-a-research-project-could-become-a-great-startup/#280fc7691cca</p>
 
 
-  <h1>การสร้างแอปพลิเคชันด้วย Thunkable</h1>
-  <p>โดย นิป เอมรัฐ<br>๒๕ ม.ค. ๒๕๖๒</p>
+<h1>การสร้างแอปพลิเคชันด้วย Thunkable</h1>
+<p>โดย นิป เอมรัฐ<br>๒๕ ม.ค. ๒๕๖๒</p>
 
   <p>เอกสาร PDF เกี่ยวกับ App Inventor ซึ่งเป็นต้นแบบของ Thunkable แนะนำให้อ่านประกอบ</p>
 
@@ -193,6 +253,12 @@
 
   <p>ฝังไฟล์เอกสาร PDF ลงในหน้าเว็บด้วยรหัสต่อไปนี้</p>
   <xmp><object width="400" height="400" data="appinventor.pdf"></object></xmp>
+
+
+<h1>คำแนะนำ</h1>
+<p>โดย นิป เอมรัฐ<br>๒๕ ม.ค. ๒๕๖๒</p>
+
+<p>บทเรียนนี้อาจไม่เหมาะสำหรับครูคอมพิวเตอร์ เนื่องจากง่ายเกินไป</p>
 
 
 </body>
