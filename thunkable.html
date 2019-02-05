@@ -8,8 +8,35 @@
 <body>
 
 
-  <h1>สร้าง WebApp</h1>
-  <p>โดย นิป เอมรัฐ<br>๕ ก.พ. ๒๕๖๒</p>
+<h1>เครื่องแปลภาษา</h1>
+<p>โดย นิป เอมรัฐ<br>๒ ก.พ. ๒๕๖๒</p>
+  
+<p>เครื่องแปลภาษาสามารถแปลได้หลายภาษาตามที่เรากำหนด ลองแปลภาษาอังกฤษเป็นภาษาไทยกันดู</p>
+  
+  <ol>
+    <li>จาก User Interface ลาก "Button" ไปวางยังโทรศัพท์</li>
+    <li>จาก User Interface ลาก "TextInput" ไปวางยังโทรศัพท์</li>
+    <li>เราจะปรับขนาดของ TextInput โดยที่คุณลักษณะด้านขวา เลือก height เป็น "Relative Size" และพิมพ์ 20% ลงในช่องด้านล่าง
+      <br>ขณะเดียวกัน ก็เลือก width เป็น "Relative Size" และพิมพ์ 80% ลงในช่องด้านล่างเช่นกัน
+    </li>
+    <li>ที่ Voice ลาก "Text-to-Speech" ไปวางยังโทรศัพท์</li>
+    <li>ที่ Voice ลาก "Translator" ไปวางยังโทรศัพท์</li>
+    <li>ที่คุณลักษณะของ Translator ซึ่งอยู่ด้านขวามือ เราจะเปลี่ยน/เลือกภาษาที่นี่ ภาษาต้นทาง source language คือภาษาที่ผู้ใช้ถนัด ส่วนภาษาปลายทาง target lanugage จะเป็นภาษาที่เราต้องการให้แปลไปเป็น ในตัวอย่างนี้ เราจะเลือกภาษาไทยเป็นภาษาต้นทาง เพื่อเปลี่ยนหรือแปลไปเป็นภาษาปลายทาง คือ ภาษาอังกฤษ</li>
+    <li>คลิกแท็บ Blocks เพื่อเริ่มเขียนโปรแกรม</li>
+    <li>คลิก Button1 เพื่อเปิดลิ้นชักของ Button1 ออกมา</li>
+    <li>ลาก “when Button1 Click” ออกมาวางยัง blocks editor</li>
+    <li>เปิดลิ้นชัก Translator1 ลาก "in Translator1 call Translate" มาวางที่ "when Button1 Click" จะมีเสียงดังขึ้น เมื่อวางถูกตำแหน่ง</li>
+    <li>เปิดลิ้นชัก TextInput1 ลาก "from TextInput1 get Text" ออกมาวางยัง blocks editor เชื่อมต่อกับซ็อกเก็ต "text to translate."</li>
+    <li>ที่ลิ้นชัก Text_to_Speech1 ลาก "in Text-to-Speech1 call Speak" มาวางที่ Translator1</li>
+    <li>ลากบล็อกผลลัพธ์จาก "in Translator1 call Translate" มาวางที่ซ็อกเก็ต "text" ของบล็อก Text-to-Speech</li>
+    <li>คลิก Live Test</li>
+    <li>พิมพ์ข้อความหรือประโยคภาษาไทยลงไป แตะคำว่า Button ในแอป โทรศัพท์ของคุณจะพูดแปลออกมาเป็นภาษาอังกฤษ 
+      <br>ยินดีด้วย คุณเพิ่งจะสร้างแอปแปลภาษาได้สำเร็จ ไช..โย!</li>
+  </ol>
+
+
+<h1>สร้าง WebApp</h1>
+<p>โดย นิป เอมรัฐ<br>๕ ก.พ. ๒๕๖๒</p>
       
   <ol>
     <li>จาก User Interface ลาก Web Viewer ไปวางยังโทรศัพท์</li>
