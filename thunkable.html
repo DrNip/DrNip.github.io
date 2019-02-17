@@ -9,6 +9,36 @@
 <body>
 
 
+<h1>Chat</h1>
+<p>โดย นิป เอมรัฐ<br>๑๗ ก.พ. ๒๕๖๒</p>
+
+<ol>
+  <li>จาก User Interface ลาก Textinput, Label และ Button ไปวางยังโทรศัพท์</li>
+  <li>ที่แท็บ Blocks เปิดลิ้นชัก Variables ลาก “Initialize app variable to” ออกมาวางยัง blocks editor จะมีเสียงดังขึ้น เมื่อวางถูกตำแหน่ง</li>
+  <li>Initialize เลือก cloud แล้วตั้งชื่อ variable ว่า message
+    <br>ตัวแปรนี้จะถูกเก็บไว้บน cloud โดยใช้ Firebase</li>
+  <li>เปิดลิ้นชัก Button1 ลาก “when button1 click” ออกมาวางยัง blocks editor</li>
+  <li>เปิดลิ้นชัก Variables ลาก “set cloud message to” ออกมาวาง</li>
+  <li>เปิดลิ้นชัก Textinput1 ลาก “from textinput1 get Text” ออกมาวางต่อ</li>
+  <li>เปิดลิ้นชัก Variables ลาก "when cloud message initializes or changes"  มาวางไว้ที่ด้านล่างของ “when Button1 Click”</li>
+  <li>จากนั้น ที่ Label1 เชื่อมบล็อก "from label1 set text" เข้ากับ "cloud message" ที่ได้จาก Variables</li>
+  <li>สำเนา URL ของ project งานส่งให้เพื่อน เพื่อว่าเพื่อนจะสามารถพูดคุยกับเราได้ ทั้งนี้ เพื่อนจะต้องมีแอป Thunkable Live ด้วย</li>
+  <li>ทั้งตัวเราและเพื่อนจะต้องคลิกปุ่ม "Live Test"</li>
+  <li>พิมพ์ข้อความลงใน textbox แล้วแท็บปุ่มส่งข้อความออกไป</li>
+  <li>(ทางเลือก)
+    <ul>
+      <li>ทำให้ข้อความหายไปหลังจากที่ปรากฏให้เห็นอยู่ช่วงเวลาหนึ่ง</li>
+      <li>สร้างห้อง Chat ห้องอื่นๆ โดยใช้ชื่อตัวแปรที่แตกต่างกันไป</li>
+    </ul>
+  </li>
+</ol>
+
+<figure>
+  <img src="images/thunkable-screen7.png" alt="Thunkable screen" width="420">
+  <figcaption>
+  บล็อกสำหรับการสร้าง Chat
+  </figcaption> 
+</figure>
 
 <h1>Live TV</h1>
 <p>โดย นิป เอมรัฐ<br>๑๔ ก.พ. ๒๕๖๒</p>
@@ -93,7 +123,7 @@
 </ol>
 
 <figure>
-  <img src="images/thunkable-screen6.png" alt="Thunkable screen" width="320">
+  <img src="images/thunkable-screen6.png" alt="Thunkable screen" width="620">
   <figcaption>
     <p>บล็อกสำหรับสร้างแบบทดสอบ</p>
   </figcaption>
@@ -218,7 +248,7 @@
   </ol>
 
   <p><img src="images/thunkable-screen4.jpg" alt="Thunkable" width="320">
-    <img src="images/thunkable-screen5.png" alt="Microsoft Image Recognition" width="320"></p>
+    <img src="images/thunkable-screen5.png" alt="Microsoft Image Recognition" width="520"></p>
 
 
 <h1>สุ่มคำตอบ</h1>
