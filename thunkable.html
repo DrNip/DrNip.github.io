@@ -9,6 +9,39 @@
 <body>
 
 
+<h1>การสร้างปุ่มเชื่อมโยงและปุ่มแชร์</h1>
+<p>โดย นิป เอมรัฐ<br>๑๙ ก.พ. ๒๕๖๒</p>
+
+<ol>
+  <li>ลาก Share จาก Social ไปวางที่ Invisible Components</li>
+  <li>ลาก Row จาก Layout ไปวางที่ด้านล่างของจอ หรือที่ด้านล่างของ Screen1</li>
+  <li>ลาก Button จาก User Interface ไปวางที่ด้านล่างของจอ</li>
+  <li>เปลี่ยนชื่อปุ่มทั้งสามที่ช่อง Text เป็น YouTube, Facebook และปุ่มแชร์ ตามลำดับ</li>
+  <li>เปลี่ยนรูปไอคอนโดยอัพโหลดรูปที่ BackgroundPicture</li>
+  <li>เมื่ออัพโหลดรูปไอคอนขึ้นไปแล้ว ก็ให้ลบชื่อไอคอนที่ช่อง Text ได้</li>
+  <li>เปลี่ยนความสูงของ Row ที่ช่อง Height เป็น Pick One: Fit contents, Fill container และเลือก Fit contents ที่ช่องที่สอง</li>
+  <li>เลือก Blocks และ YouTube button เลือก When YouTube button Click do ออกมาวาง</li>
+  <li>สำเนา When YouTube button Click do อีกสองอัน (กดแป้น Ctrl+C และ Ctrl+V)</li>
+  <li>เปลี่ยน YouTube button เป็น Facebook button และ Share button ตามลำดับ</li>
+  <li>ที่ลิ้นชัก Control ลากบล็อก open link ออกมาวางใน When YouTube button Click do</li>
+  <li>สำเนาบล็อก open link ออกมาวางใน When Facebook button Click do</li>
+  <li>ลากบล็อกว่างจากลิ้นชัก Text มาวางต่อที่ open link ทำสำเนามาวางที่ When Facebook button Click do เช่นกัน</li>
+  <li>ใส่ที่อยู่เว็บลงในบล็อกว่าง เช่น https://www.youtube.com/channel/UCdllT2gG2qT7fYV2k8KwjTg และ https://www.facebook.com/aruuniversity</li>
+  <li>ที่ลิ้นชัก Share1 ลากบล็อก in Share1 call ShareMessage มาวางต่อใน When Share button Click do</li>
+  <li>คลิก Live Test</li>
+  <li>เป็นอันว่าเราได้สร้างปุ่มเชื่อมโยงและปุ่มแชร์สำเร็จแล้ว ไชโย!</li>
+</ol>
+
+<figure>
+  <img src="images/thunkable-screen8.png" alt="Thunkable screen" width="620">
+  <figcaption>
+  บล็อกสำหรับการสร้างปุ่มเชื่อมโยงและปุ่มแชร์
+  </figcaption>
+</figure>
+
+<p>Thunkable. (2018, Sep 5). <em>Thunkable X Beginner Tutorial #8 "Webviewer App".</em> Restrieve from https://www.youtube.com/watch?v=MDMM0cHvpUA&t=1s</p>
+
+
 <h1>Chat</h1>
 <p>โดย นิป เอมรัฐ<br>๑๗ ก.พ. ๒๕๖๒</p>
 
@@ -37,7 +70,7 @@
   <img src="images/thunkable-screen7.png" alt="Thunkable screen" width="420">
   <figcaption>
   บล็อกสำหรับการสร้าง Chat
-  </figcaption> 
+  </figcaption>
 </figure>
 
 <h1>Live TV</h1>
@@ -73,25 +106,25 @@
   <dt><strong>PJ Masks</strong></dt>
   <dd>https://www.youtube.com/watch?v=uxHoIkA5u5s</dd>
 </dl>
-  
+
 
 <h1>Webviewer App</h1>
 <p>โดย นิป เอมรัฐ<br>๑๓ ก.พ. ๒๕๖๒</p>
-  
+
 <p>https://www.youtube.com/watch?v=MDMM0cHvpUA</p>
 
 
 <h1>How to change screens with navigators</h1>
 <p>โดย นิป เอมรัฐ<br>๑๓ ก.พ. ๒๕๖๒</p>
-  
+
 <p>https://www.youtube.com/watch?v=Z9R_kg4ew2M</p>
 
 
 <h1>สร้างแบบทดสอบ (Quiz)</h1>
 <p>โดย นิป เอมรัฐ<br>๙ ก.พ. ๒๕๖๒</p>
-  
+
 <p>แอปทดสอบความรู้ น่าจะเป็นสิ่งที่ครูทุกคนปรารถนาที่จะสร้างด้วยมือของตัวเอง เรามาลองทำกัน</p>
-  
+
 <ol>
   <li>จาก User Interface ลาก Label 2 อันไปวางยังโทรศัพท์
   <br>เราจะใช้ Label1 แสดงความก้าวหน้าและ Label2 แสดงคำถาม
@@ -107,7 +140,7 @@
   <li>เปิดลิ้นชัก TextInput1 ลาก “from TextInput1 get Text” ออกมาวางไว้ภายในบล็อก equals เครื่องหมายเท่ากับ</li>
   <li>เปิดลิ้นชัก text ลากบล็อก text มาวางไว้ที่ภายในบล็อก equals ด้านขวา
     <br>พิมพ์คำตอบที่ถูกต้องลงในบล็อก text (เช่น 3 สี)
-    <br>บล็อก equals นี้จะตรวจดูว่าคำตอบที่ผู้ใช้ตอบนั้น ถูกต้องหรือไม่ 
+    <br>บล็อก equals นี้จะตรวจดูว่าคำตอบที่ผู้ใช้ตอบนั้น ถูกต้องหรือไม่
     <br>พึงระลึกว่า คำตอบที่พิมพ์เข้ามานั้น จะเป็น case and space sensitive หมายความว่า ตัวอักษรภาษาอังกฤษตัวพิมพ์ใหญ่และเล็กนั้นถือว่าเป็นคนละตัวกัน และการเว้นวรรคก็ต้องเว้นให้ตรงกับคำเฉลยด้วย
   </li>
   <li>หากข้อความที่พิมพ์ตอบเข้ามาตรงกับคำตอบที่ถูกต้อง (3 สี) label แรกจะถูกเปลี่ยนเป็นข้อความว่า "ถูกต้อง!" แล้ว label ที่สองจะแสดงคำถามที่สองต่อไป
@@ -132,7 +165,7 @@
 
 <h1>การสร้างแอปแบบปัดเลื่อนหน้าจอ</h1>
 <p>โดย นิป เอมรัฐ<br>๘ ก.พ. ๒๕๖๒</p>
-  
+
 <p>https://www.youtube.com/watch?v=kFp_c76lQ5w</p>
 
 
@@ -168,9 +201,9 @@
 
 <h1>เครื่องแปลภาษา</h1>
 <p>โดย นิป เอมรัฐ<br>๕ ก.พ. ๒๕๖๒</p>
-  
+
 <p>เครื่องแปลภาษาสามารถแปลได้หลายภาษาตามที่เรากำหนด ลองแปลภาษาไทยเป็นภาษาอังกฤษกันดู</p>
-  
+
   <ol>
     <li>จาก User Interface ลาก "Button" ไปวางยังโทรศัพท์</li>
     <li>จาก User Interface ลาก "TextInput" ไปวางยังโทรศัพท์</li>
@@ -188,21 +221,21 @@
     <li>ที่ลิ้นชัก Text_to_Speech1 ลาก "in Text-to-Speech1 call Speak" มาวางที่ Translator1</li>
     <li>ลากบล็อกผลลัพธ์จาก "in Translator1 call Translate" มาวางที่ซ็อกเก็ต "text" ของบล็อก Text-to-Speech</li>
     <li>คลิก Live Test</li>
-    <li>พิมพ์ข้อความหรือประโยคภาษาไทยลงไป แตะคำว่า Button ในแอป โทรศัพท์ของคุณจะพูดแปลออกมาเป็นภาษาอังกฤษ 
+    <li>พิมพ์ข้อความหรือประโยคภาษาไทยลงไป แตะคำว่า Button ในแอป โทรศัพท์ของคุณจะพูดแปลออกมาเป็นภาษาอังกฤษ
       <br>ยินดีด้วย คุณเพิ่งจะสร้างแอปแปลภาษาได้สำเร็จ ไช..โย!</li>
   </ol>
 
 
 <h1>สร้าง WebApp</h1>
 <p>โดย นิป เอมรัฐ<br>๕ ก.พ. ๒๕๖๒</p>
-      
+
   <ol>
     <li>จาก User Interface ลาก Web Viewer ไปวางยังโทรศัพท์</li>
     <li>ระบุที่อยู่เว็บลงในช่อง URL ที่คุณลักษณะด้านขวา โดยต้องเขียนที่อยู่เต็มเท่านั้น เช่น http://drnip.com คือมี http:// หรือ https:// ด้วย</li>
     <li>คลิก Live Test</li>
     <li>เปิดแอป โทรศัพท์ของคุณจะแสดงเว็บไซต์ที่คุณกำหนดไว้ออกมา ไชโย!</li>
   </ol>
-  
+
 
 <h1>Turn websites into apps</h1>
 <p>โดย นิป เอมรัฐ<br>๓ ก.พ. ๒๕๖๒</p>
@@ -221,9 +254,9 @@
 
 <h1>Image Recognition</h1>
 <p>โดย นิป เอมรัฐ<br>๒ ก.พ. ๒๕๖๒</p>
-  
+
   <p></p>
-  
+
   <ol>
     <li>จาก User Interface ลาก Button ไปวางยังโทรศัพท์</li>
     <li>จาก Image ลาก Image ไปวางยังโทรศัพท์ เหนือปุ่ม</li>
