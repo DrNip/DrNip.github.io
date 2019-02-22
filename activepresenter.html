@@ -9,6 +9,43 @@
 <body> 
   
 
+<h1>สรุปผลการทดสอบ (เพิ่มเติม)</h1>
+<p>โดย นิป เอมรัฐ<br>๒๒ ก.พ. ๒๕๖๒</p>
+
+<ol>
+  <li>เปลี่ยนจาก Mode จาก Graded เป็น Survey จะทำให้โปรแกรมไม่นำมาคิดเป็นเปอร์เซนต์ที่ตอบถูก</li>
+  <li>ไม่เลือก Report ID เพื่อไม่ให้โปรแกรมนำกล่องนี้มารวมเป็นจำนวนข้อสอบ</li>
+  <li>เพิ่ม On Click...
+
+    <p>Submit: All showing interactions
+    <br>เพื่อนำข้อความที่ผู้เรียนพิมพ์ชื่อ ไปเก็บไว้ในตัวแปร learnerName นอกเหนือจากการกดแป้น Enter</p>
+    
+    <p>Go to Slide: Slide 3
+    <br>เพื่อดำเนินเรื่องต่อไปยังสไลด์แผ่นที่ 3</li>
+</ol>
+
+<figure>
+  <img src="images/active-presenter1.jpg" width="520" alt="Active Presenter">
+  <figcaption>
+      <p>เพิ่มปุ่ม OK</p>
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="images/active-presenter2.jpg" width="320" alt="Active Presenter">
+  <figcaption>
+      <p>เปลี่ยน Mode จาก Graded เป็น Survey และยกเลิก Report ID</p>
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="images/active-presenter3.jpg" width="320" alt="Active Presenter">
+  <figcaption>
+      <p>เมื่อคลิกปุ่มแล้ว ให้ดำเนินการส่ง (Submit) ชื่อผู้เรียนไปเก็บไว้ในตัวแปรที่สร้างขึ้น แลัวไปยังสไลด์ (Go to Slide) ถัดไป</p>
+  </figcaption>
+</figure>
+
+
 <h1>สรุปผลการทดสอบ</h1>
 <p>โดย นิป เอมรัฐ<br>๒๒ ก.พ. ๒๕๖๒</p>
 
@@ -27,11 +64,35 @@
 
 <p>ดูตัวแปรทั้งหมดได้ที่เมนู Home > Variables</p>
 
+<figure>
+  <img src="images/active-presenter4.jpg" width="520" alt="Active Presenter">
+  <figcaption>
+      <p>สไลด์แผ่นสุดท้าย สรุปผลการทำแบบทดสอบ ชื่อผู้เรียนเป็นผลจากตัวแปรที่เราสร้างขึ้นใช้เอง ดู--สรุปผลการทดสอบ (เพิ่มเติม)</p>
+  </figcaption>
+</figure>
+
 <p>Tuyen Luu. (2019, Jan 15). <em>How to Review A Course in ActivePresenter 7.</em> Restrieve from https://atomisystems.com/tutorials/ap7/how-to-review-a-course-in-activepresenter-7/</p>
 
 
 <h1>การแสดงชื่อผู้เรียนด้วยตัวแปรข้อความ (Text Variables)</h1>
 <p>โดย นิป เอมรัฐ<br>๒๒ ก.พ. ๒๕๖๒</p>
+
+<p>การรับชื่อของผู้เรียน แล้วนำมาใช้ตลอดการเรียน เพื่อสร้างความรู้สึก การเป็นส่วนตัวและการมีส่วนร่วมในการเรียน</p>
+
+<ol>
+  <li>แทรก textbox
+    <br>เลือกแท็บ Interactions > Text Box</li>
+  <li>เขียนคำแนะนำ เช่น
+    <br>กรุณาพิมพ์ชื่อลงในกล่องด้านล่าง แล้วกดแป้น Enter 
+    <br>เลือกแท็บ Annotations > Text Caption</li>
+  <li>เชื่อมโยง Text Box เข้ากับตัวแปร
+    <br>คลิกเลือก text box. แล้วเลือกหน้าต่าง Properties > Interactivity > Score & Reporting > Variable</li>
+  <li>คลิกปุ่ม Add Variable รูป + ที่ Variable</li>
+  <li>ตั้งชื่อตัวแปรในช่อง Variable Name เช่น learnerName > OK</li>
+  <li>เลือก Attempts เป็น 1</li>
+  <li>ลบ Correct Message และ Incorrect Message</li>
+  <li>แทรกตัวแปรลงใน text-based object ใดๆ เช่น text caption, shape, button โดยการใส่ชื่อตัวแปรไว้ภายในสัญลักษณ์ percent signs (%) เช่น %learnerName%</li>
+</ol>
 
 <p>Trang. (2018, Nov 29). <em>Using Variables 02: Display Username with Text Variables.</em> Restrieve from https://atomisystems.com/tutorials/ap7/using-text-variables-display-username/</p>
 
