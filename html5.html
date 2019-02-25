@@ -16,6 +16,52 @@
 <body>
 
 
+<h1>การเพิ่มอีเมลฟอร์มให้กับแม่แบบเว็บไซต์</h1>
+<p>โดย นิป เอมรัฐ<br>๒๕ ก.พ. ๒๕๖๒</p>
+
+  <p>สร้างแบบฟอร์มสำหรับเว็บไซต์ HTML
+  <br>ตั้งชื่อให้กับ fields ทุกอัน
+  <br>ชี้ action ไปยัง formspree.io
+  <br>แล้วยืนยันอีเมลของคุณ</p>
+
+  <h2>ขั้นตอนโดยละเอียด</h2>
+<ol>
+  <li>เชื่อมต่อแบบฟอร์ม
+  <br><xmp><form action="https://formspree.io/ใส่อีเมลของคุณตรงนี้" method="POST" /></xmp>
+  สังเกตข้อความในเครื่องหมายคำพูด แทนที่ข้อความ *ใส่อีเมลของคุณตรงนี้* ด้วยอีเมลของคุณ เช่น
+  <br><xmp><form action="https://formspree.io/nip@gmail.com" method="POST" /></xmp>
+  </li>
+  <li>เพิ่มคุณลักษณะ name attributes ในทุกๆ ส่วนประกอบ เช่น แท็ก input, select, และ textarea ดังตัวอย่างต่อไปนี้
+  <xmp><input type="text" name="name"></xmp>
+  </li>
+  <li>ส่งและยืนยัน
+  <br>ส่งแบบฟอร์มครั้งแรก แล้วนั่นจะเป็นการยืนยันการขอใช้งานแบบฟอร์มนี้
+  </li>
+</ol>
+
+  <p>ตัวอย่างแบบฟอร์มติดต่อทางอีเมล (Email Contact Forms)</p>
+<xmp>
+  <form method="POST" action="https://formspree.io/ใส่อีเมลของคุณตรงนี้">
+  <input type="text" name="name" placeholder="ชื่อ - นามสกุล"/>
+  <input type="email" name="email" placeholder="อีเมลของคุณ">
+  <textarea name="message" placeholder="ความคิดเห็นของคุณ"></textarea>
+  <button type="submit">ส่งความคิดเห็น</button>
+  </form>
+</xmp>
+
+<p>Formspree. (2019, Feb 25). <em>Email Contact Forms.</em> Retrived from https://formspree.io/</p>
+
+
+<h1>การใส่รูปไอคอนบนหน้าเว็บ</h1>
+<p>โดย นิป เอมรัฐ<br>๒๕ ก.พ. ๒๕๖๒</p>
+
+  <p>รายการไอคอน
+  <br>https://www.w3schools.com/icons/icons_reference.asp</p>
+
+  <p>วิธีใช้งาน
+  <br>https://www.w3schools.com/css/css_icons.asp</p>
+
+
 <h1>รวมแม่แบบเว็บไซต์ฟรี</h1>
 <p>โดย นิป เอมรัฐ<br>๑๘ ก.พ. ๒๕๖๒</p>
 
@@ -88,7 +134,7 @@ font-size: 100px;
   </li>
   <li>ระบุชื่อฟอนต์ในไฟล์ CSS
       <xmp>
-      font-family: 'Pattaya', sans-serif;      
+      font-family: 'Pattaya', sans-serif;
       font-family: 'Krub', sans-serif;
       </xmp>
   </li>
@@ -170,7 +216,7 @@ https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float
 
 <h1>Cassette Tape Player</h1>
 <p>โดย นิป เอมรัฐ<br>๗ ก.พ. ๒๕๖๒</p>
-  
+
   <p>ฟังเพลงผ่านเทปคาสเซ็ท</p>
   <p>https://tympanus.net/codrops/2012/07/12/old-school-cassette-player-with-html5-audio/</p>
 
@@ -184,7 +230,7 @@ https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float
 
 <h1>HOW TO'S The Easy Way to Add Fonts to Your Website (Including Custom Fonts)</h1>
 <p>โดย นิป เอมรัฐ<br>๕ ก.พ. ๒๕๖๒</p>
-    
+
   <p>https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website</p>
 
 
@@ -192,7 +238,7 @@ https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float
 <p>โดย นิป เอมรัฐ<br>๕ ก.พ. ๒๕๖๒</p>
 
   <p>https://addpipe.com/blog/10-advanced-features-in-html5-video-player/</p>
-  
+
 
 <h1>ซ่อนตัวจากกูเกิล</h1>
 <p>โดย นิป เอมรัฐ<br>๕ ก.พ. ๒๕๖๒</p>
@@ -212,12 +258,12 @@ https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float
 
 <h1>ปรับแต่งฟอนต์ด้วย Google Fonts API</h1>
 <p>โดย นิป เอมรัฐ<br>๒ ก.พ. ๒๕๖๒</p>
-  
+
 <p>การเรียกใช้กูเกิลฟอนต์ให้กับเว็บไซต์ การปรับแต่ง เช่น การใช้เงา ดูลิงค์ด้านล่าง</p>
-  
+
 <p>Google Fonts. (2019, Feb 2). <em>Get Started with the Google Fonts API.</em> Restrieve from https://developers.google.com/fonts/docs/getting_started</p>
 
-  
+
 <h1>คำศัพท์คอมพิวเตอร์ที่ใช้บ่อย</h1>
 <p>โดย นิป เอมรัฐ<br>๓๐ ม.ค. ๒๕๖๒</p>
 
