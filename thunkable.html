@@ -9,6 +9,29 @@
 <body>
 
 
+<h1>การตีพิมพ์ไปยังแอปสโตร์ (Publishing to the App Store)</h1>
+<p>โดย นิป เอมรัฐ<br>๒๗ ก.พ. ๒๕๖๒</p>
+
+<p>ใช้เวลาอย่างน้อย 20 นาที
+<br>ต้องเป็นสมาชิกนักพัฒนาแอปเปิล (Apple Developer Program membership)
+<br>ถ้ายังไม่มี สมัคร Apple ID ที่นี่ https://appleid.apple.com/account#!&page=create</p>
+
+
+<h1>Apple Developer</h1>
+<p>โดย นิป เอมรัฐ<br>๒๗ ก.พ. ๒๕๖๒</p>
+
+
+
+<h1>หน้า Login</h1>
+<p>โดย นิป เอมรัฐ<br>๒๗ ก.พ. ๒๕๖๒</p>
+
+<p>Apple Developer
+<br>https://developer.apple.com/</p>
+
+<p>Google Play Console
+<br>https://play.google.com/apps/publish/</p>
+
+
 <h1>การจัดวาง (organize) และเคลื่อนย้ายส่วนประกอบ</h1>
 <p>โดย นิป เอมรัฐ<br>๒๖ ก.พ. ๒๕๖๒</p>
   
@@ -74,11 +97,13 @@
 <p>ต้องมีบัญชี Google Play Developer account (ค่าสมัคร $25 จ่ายครั้งเดียว)</p>
 <p>สมัครได้ที่นี่ https://play.google.com/apps/publish/signup/</p>
 
+<h2>การเตรียมภาพประกอบ</h2>
+
 <p>Design assets</p>
 <ul>
-  <li>ไอคอน Icon ขนาด (512 x 512 px)</li>
-  <li>ภาพหน้าจอของแอป App screenshots</li>
-  <li>ภาพประกอบขนาด 1024 x 500 px)</li>
+  <li>ไอคอน Icon ขนาด 512 x 512 px</li>
+  <li>ภาพหน้าจอโทรศัพท์ (App screenshots) 1-8 ภาพ</li>
+  <li>ภาพประกอบขนาด 1024 x 500 px</li>
 </ul>
 
 <figure>
@@ -89,9 +114,8 @@
   </figcaption>
 </figure>
 
-<p>คุณภาพของแอปเป็นสิ่งสำคัญ แนะนำให้อ่านคำแนะนำของ Google ที่นี่ https://play.google.com/about/developer-content-policy/#!?modal_active=none</p>
+<h2>การเตรียมไฟล์แอปพลิเคชัน (.apk)</h2>
 
-<h2>การเตรียมการ</h2>
 <ol>
     <li>จะต้องระบุ app icon, name, package name และ version ของแอปก่อน
       <br>ดูคำแนะนำที่นี่ https://docs.thunkable.com/thunkable-cross-platform/create/app-icon-+-name
@@ -104,14 +128,53 @@
 
 <h2>ขั้นตอนการส่งเพื่อตรวจสอบ</h2>
 <ol>
-    <li>ที่ Console ของ Google Play Developer สร้างแอปใหม่โดยคลิกปุ่ม Create Application</li>
-    <li>เลือกคำสั่ง App releases</li>
-    <li>คลิกปุ่ม Create Releases</li>
+    <li>ที่ Console ของ Google Play Developer (https://developers.google.com/) สร้างแอปใหม่โดยคลิกปุ่ม Create Application
+      <br>ทำตามขั้นตอนต่างๆ เช่น เลือกภาษาที่ใช้เป็นค่าเริ่มต้น ใส่คำอธิบายแบบย่อ คำอธิบายแบบเต็ม 
+      <br>เพิ่มภาพหน้าจอโทรศัพท์ เพิ่มภาพไอคอนความละเอียดสูง เพิ่มภาพประกอบหรือกราฟิกฟีเจอร์
+    </li>
+    <li>ใส่ภาพประกอบอย่างน้อย 4 design assets - 2 screenshots, ไอคอนความละเอียดสูง (512 x 512 px) และภาพกราฟิกประกอบ (1024 x 500 px)
+      <br>เลือกประเภทอแปพลิเคชัน เลือกหมวดหมู่ ที่อยู่เว็บไซต์ ที่อยู่อีเมล
+      <br>ที่สำคัญ คือ นโยบายความเป็นส่วนตัว สร้างเป็นไฟล์ HTML อัพโหลดขึ้นเว็บ แล้วนำที่อยู่มาวางที่นี่
+      <br>คลิกปุ่มบันทึกเวอร์ชันร่าง
+      <br>เมนูทางซ้าย 'ข้อมูลผลิตภัณฑ์ใน Store' จะมีเครื่องหมายถุูกสีเขียว
+    </li>
+    <li>เลือกคำสั่ง App releases (รุ่นต่างๆ ของแอป)</li>
+    <li>ที่แทร็กเวอร์ชันที่ใช้งานจริง > จัดการ คลิกปุ่ม Create Releases (สร้างรุ่น)</li>
     <li>เปิดการใช้ Google Play App signing</li>
-    <li>ลากไฟล์แอป (.apk) ไปวางยัง console</li>
-    <li>พิมพ์ questionnaire ระบุราคา pricing และ availability</li>
-    <li>ใส่ภาพประกอบอย่างน้อย 4 design assets - 2 screenshots, ไอคอนความละเอียดสูง (512 x 512 px) และภาพกราฟิกประกอบ (1024 x 500 px)</li>
+    <li>อัพโหลดโดยลากไฟล์แอป (.apk) ไปวางยัง console หรือคลิกปุ่มเพื่อเลือกไฟล์ > Open</li>
+    <li>เลือกชื่อรุ่นเป็น 1 มีอะไรใหม่ในเวอร์ชันนี้ ระบุเป็น 1.0 > บันทึก</li>
+    <li>คลิกปุ่มตรวจสอบรุ่น
+      <br>สรุปรีวิว จะระบุข้อผิดพลาดขึ้น ถ้าไม่ได้ส่งเอกสารนโยบายความเป็นส่วนตัว 
+      <br>หากเป็นเช่นนั้น ให้คลิกดูข้อความแสดงข้อผิดพลาด แล้วสำเนาข้อความการขอใช้สิทธิ์ (บรรทัดที่สอง) 
+      <br>นำไปสร้างไฟล์นโยบายความเป็นส่วนตัวในรูปแบบ HTML ที่เว็บ privacypolicies.com
+      <br>อัพโหลดไฟล์ HTML ที่ได้ แล้วไปที่ 'ข้อมูลผลิตภัณฑ์ใน Store' เพื่อระบุที่อยู่ของไฟล์นโยบายความเป็นส่วนตัว
+      <br>ถึงตรงนี้ เมนูทางซ้าย App releases (รุ่นต่างๆ ของแอป) จะมีเครื่องหมายถุูกสีเขียว
+    </li>
+    <li>ไปที่เมนู 'การให้คะแนนเนื้อหา' > ดำเนินการต่อ
+      <br>ระบุที่อยู่อีเมล และยืนยันที่อยู่อีเมล
+      <br>เลือกหมวดหมู่แอป แล้วตอบคำถามทั้งหมดในแบบสอบถาม (questionnaire)
+      <br>จากนั้น บันทึกแบบสอบถาม > คำนวนเพื่อจัดประเภท > ใช้การจัดประเภท
+      <br>ถึงตรงนี้ เมนูทางซ้าย 'การให้คะแนนเนื้อหา' จะมีเครื่องหมายถุูกสีเขียว
+    </li>
+    <li>ไปที่เมนู 'การกำหนดราคาและการจัดจำหน่าย'
+      <br>ระบุตัวเลือกต่างๆ เช่น เป็นแอปที่ต้องซื้อหรือฟรี (pricing) พร้อมใช้งานได้ในประเทศใดบ้าง (availability)
+      <br>คลิกปุ่มบันทึกเวอร์ชันร่าง
+      <br>ถึงตรงนี้ เมนูทางซ้าย 'การกำหนดราคาและการจัดจำหน่าย' จะมีเครื่องหมายถุูกสีเขียว
+    </li>
+    <li>กลับไปเลือกคำสั่ง App releases (รุ่นต่างๆ ของแอป)
+      <br>เลือก แก้ไขรุ่น > ตรวจสอบ > เริ่มเปิดตัวในเวอร์ชันที่ใช้งานจริง > ยืนยัน
+      <br>เสร็จแล้ว รอการตรวจสอบสักครู่ ก่อนใช้จริงต่อไป ไชโย!
+    </li>
 </ol>
+
+<figure>
+    <img src="images/iluvaru-googleplay.png" alt="Icon" width="620">
+    <figcaption>
+    แอปพลิเคชัน I <3 ARU บน Google Play Store
+    </figcaption>
+</figure>
+
+<p>คำแนะนำ: คุณภาพของแอปเป็นสิ่งสำคัญ แนะนำให้อ่านคำแนะนำของ Google ที่นี่ https://play.google.com/about/developer-content-policy/#!?modal_active=none</p>
 
 <p>Thunkable. (2019, Feb 20). <em>Publish to Play Store (Android).</em> Restrieve from https://docs.thunkable.com/thunkable-cross-platform/publish/publish-to-play-store-android</p>
 <p>Google. (2019, Feb 25). <em>Developer Policy Center search: Let's build the world's most trusted source for apps and games.</em> Restrieve from https://play.google.com/about/developer-content-policy/</p>
